@@ -1,0 +1,159 @@
+{
+  "checkpoint_id": "20260618T170252Z_after_tucson_pause",
+  "created_at_utc": "2026-06-18T17:02:52+00:00",
+  "scope": "cities with population >= 50000",
+  "runner_status": "stopped after Tucson, AZ completed",
+  "source_discovery_only": true,
+  "resume_command": ".venv/bin/python -m music_calendar_finder run --min-population 50000 --sleep-seconds-between-cities 10 --yes --force",
+  "qa_command": ".venv/bin/python -m music_calendar_finder qa-workbook",
+  "export_command": ".venv/bin/python -m music_calendar_finder export",
+  "database_path": "/Volumes/ScottSneak/Code/Calendar Ingest/music-calendar-source-finder/data/music_calendar_finder.sqlite",
+  "database_snapshot": "checkpoints/20260618T170252Z_after_tucson_pause/music_calendar_finder.sqlite",
+  "master_export_path": "/Volumes/ScottSneak/Code/Calendar Ingest/music-calendar-source-finder/exports/master_music_calendar_sources.xlsx",
+  "master_export_snapshot": "checkpoints/20260618T170252Z_after_tucson_pause/master_music_calendar_sources.xlsx",
+  "status_counts": [
+    {
+      "status": "completed",
+      "count": 59
+    },
+    {
+      "status": "pending",
+      "count": 896
+    }
+  ],
+  "completed_count": 59,
+  "pending_count": 896,
+  "processing_count": 0,
+  "failed_count": 0,
+  "next_pending": [
+    {
+      "city": "El Paso",
+      "state": "TX",
+      "population": 862494,
+      "city_tier": "large",
+      "status": "pending"
+    },
+    {
+      "city": "Omaha",
+      "state": "NE",
+      "population": 826161,
+      "city_tier": "large",
+      "status": "pending"
+    },
+    {
+      "city": "McAllen",
+      "state": "TX",
+      "population": 810034,
+      "city_tier": "large",
+      "status": "pending"
+    },
+    {
+      "city": "Birmingham",
+      "state": "AL",
+      "population": 778756,
+      "city_tier": "large",
+      "status": "pending"
+    },
+    {
+      "city": "Albuquerque",
+      "state": "NM",
+      "population": 767499,
+      "city_tier": "large",
+      "status": "pending"
+    }
+  ],
+  "recent_completed": [
+    {
+      "city": "Tucson",
+      "state": "AZ",
+      "population": 879871,
+      "city_tier": "large",
+      "last_processed_at": "2026-06-18T17:00:49+00:00",
+      "updated_at": "2026-06-18T17:00:49+00:00"
+    },
+    {
+      "city": "Bridgeport",
+      "state": "CT",
+      "population": 921660,
+      "city_tier": "large",
+      "last_processed_at": "2026-06-18T16:53:43+00:00",
+      "updated_at": "2026-06-18T16:53:43+00:00"
+    },
+    {
+      "city": "Fort Worth",
+      "state": "TX",
+      "population": 941311,
+      "city_tier": "large",
+      "last_processed_at": "2026-06-18T16:45:59+00:00",
+      "updated_at": "2026-06-18T16:45:59+00:00"
+    },
+    {
+      "city": "Buffalo",
+      "state": "NY",
+      "population": 949547,
+      "city_tier": "large",
+      "last_processed_at": "2026-06-18T16:39:47+00:00",
+      "updated_at": "2026-06-18T16:39:47+00:00"
+    },
+    {
+      "city": "Louisville",
+      "state": "KY",
+      "population": 965005,
+      "city_tier": "large",
+      "last_processed_at": "2026-06-18T14:54:55+00:00",
+      "updated_at": "2026-06-18T14:54:55+00:00"
+    },
+    {
+      "city": "Hartford",
+      "state": "CT",
+      "population": 969171,
+      "city_tier": "large",
+      "last_processed_at": "2026-06-18T14:47:19+00:00",
+      "updated_at": "2026-06-18T14:47:19+00:00"
+    },
+    {
+      "city": "Oklahoma City",
+      "state": "OK",
+      "population": 1000207,
+      "city_tier": "mega",
+      "last_processed_at": "2026-06-18T14:39:18+00:00",
+      "updated_at": "2026-06-18T14:39:18+00:00"
+    },
+    {
+      "city": "Richmond",
+      "state": "VA",
+      "population": 1081248,
+      "city_tier": "mega",
+      "last_processed_at": "2026-06-18T14:32:33+00:00",
+      "updated_at": "2026-06-18T14:32:33+00:00"
+    },
+    {
+      "city": "Raleigh",
+      "state": "NC",
+      "population": 1150010,
+      "city_tier": "mega",
+      "last_processed_at": "2026-06-18T14:25:57+00:00",
+      "updated_at": "2026-06-18T14:25:57+00:00"
+    },
+    {
+      "city": "Salt Lake City",
+      "state": "UT",
+      "population": 1169033,
+      "city_tier": "mega",
+      "last_processed_at": "2026-06-18T14:19:52+00:00",
+      "updated_at": "2026-06-18T14:19:52+00:00"
+    }
+  ],
+  "latest_completed_run_totals": {
+    "latest_completed_city_runs": 59,
+    "queries_completed": 3102,
+    "candidates_found": 30370,
+    "verified_sources": 6468,
+    "rejected_sources": 3194
+  },
+  "notes": [
+    "The live runner was stopped with no processing city left in the queue.",
+    "The checkpoint database was created using sqlite backup after the runner stopped.",
+    "The master XLSX export was regenerated after Tucson completed and passed workbook QA."
+  ]
+}

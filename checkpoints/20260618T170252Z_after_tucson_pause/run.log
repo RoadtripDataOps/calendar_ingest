@@ -1,0 +1,8 @@
+checkpoint_id=20260618T170252Z_after_tucson_pause
+created_at_utc=2026-06-18T17:02:52+00:00
+run_command=.venv/bin/python -m music_calendar_finder run --min-population 50000 --sleep-seconds-between-cities 10 --yes --force
+stop_point=Tucson, AZ completed queries=44/44 candidates=430 verified=74 rejected=53
+export=.venv/bin/python -m music_calendar_finder export -> exports/master_music_calendar_sources.xlsx
+qa=.venv/bin/python -m music_calendar_finder qa-workbook -> No workbook QA issues found
+status_counts=[{'status': 'completed', 'count': 59}, {'status': 'pending', 'count': 896}]
+next_pending=El Paso, TX

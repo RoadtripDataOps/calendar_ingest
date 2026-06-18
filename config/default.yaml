@@ -1,0 +1,127 @@
+app:
+  env: local
+  log_level: INFO
+  database_path: data/music_calendar_finder.sqlite
+  import_xlsx_path: imports/cities.xlsx
+  export_dir: exports
+  write_city_workbooks: false
+  user_agent: MusicCalendarSourceFinderBot/0.1
+
+budgets:
+  small:
+    top_sources_target: 25
+    verified_sources_target: 25
+    max_verified_sources: 50
+    max_candidate_domains: 100
+    max_serpapi_queries: 20
+    max_query_pages: 1
+  mid:
+    top_sources_target: 25
+    verified_sources_target: 50
+    max_verified_sources: 75
+    max_candidate_domains: 150
+    max_serpapi_queries: 30
+    max_query_pages: 2
+  large:
+    top_sources_target: 25
+    verified_sources_target: 75
+    max_verified_sources: 100
+    max_candidate_domains: 225
+    max_serpapi_queries: 45
+    max_query_pages: 2
+  mega:
+    top_sources_target: 50
+    verified_sources_target: 100
+    max_verified_sources: 150
+    max_candidate_domains: 350
+    max_serpapi_queries: 70
+    max_query_pages: 3
+  music_market_overrides:
+    - city: Los Angeles
+      state: CA
+    - city: New York
+      state: NY
+    - city: Nashville
+      state: TN
+    - city: Austin
+      state: TX
+    - city: New Orleans
+      state: LA
+    - city: Chicago
+      state: IL
+    - city: Atlanta
+      state: GA
+    - city: Seattle
+      state: WA
+    - city: Portland
+      state: OR
+    - city: Miami
+      state: FL
+    - city: Denver
+      state: CO
+    - city: San Francisco
+      state: CA
+    - city: Oakland
+      state: CA
+    - city: Detroit
+      state: MI
+    - city: Memphis
+      state: TN
+    - city: Philadelphia
+      state: PA
+  tourism_market_overrides:
+    - city: Las Vegas
+      state: NV
+    - city: Orlando
+      state: FL
+    - city: New Orleans
+      state: LA
+    - city: Miami Beach
+      state: FL
+    - city: Santa Fe
+      state: NM
+    - city: Asheville
+      state: NC
+    - city: Key West
+      state: FL
+    - city: Honolulu
+      state: HI
+    - city: Savannah
+      state: GA
+    - city: Charleston
+      state: SC
+
+serpapi:
+  engine: google
+  google_domain: google.com
+  hl: en
+  gl: us
+  num: 10
+  no_cache: false
+  safe: active
+  timeout_seconds: 20
+
+crawl:
+  timeout_seconds: 15
+  max_response_bytes: 2097152
+  max_pages_per_domain: 4
+  max_seconds_per_domain: 30
+  user_agent: MusicCalendarSourceFinderBot/0.1
+
+dedupe:
+  low_priority_domains:
+    - facebook.com
+    - instagram.com
+    - x.com
+    - twitter.com
+    - tiktok.com
+    - youtube.com
+    - eventbrite.com
+    - ticketmaster.com
+    - songkick.com
+    - bandsintown.com
+    - meetup.com
+    - allevents.in
+    - yelp.com
+    - tripadvisor.com
+

@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+data/*.sqlite
+data/*.sqlite-shm
+data/*.sqlite-wal
+exports/*.xlsx
+exports/cities/*.xlsx
+logs/*.log
+.DS_Store

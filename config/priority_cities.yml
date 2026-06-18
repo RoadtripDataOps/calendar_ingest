@@ -1,0 +1,26 @@
+priority_cities:
+  - city: Austin
+    state: TX
+    reason: Core validation music market
+    priority_level: 100
+  - city: Nashville
+    state: TN
+    reason: Major music industry market
+    priority_level: 95
+  - city: New Orleans
+    state: LA
+    reason: High-signal music and tourism market
+    priority_level: 95
+  - city: Memphis
+    state: TN
+    reason: Historic music market
+    priority_level: 90
+  - city: Detroit
+    state: MI
+    reason: Historic music market
+    priority_level: 85
+  - city: Asheville
+    state: NC
+    reason: Smaller tourism and music market
+    priority_level: 80
+
